@@ -2,7 +2,7 @@
 
 namespace show
 {
-    Show::Show(const std::string &name, const std::string &description, ShowType showType)
+    Show::Show(const std::string &name, const std::string &description, EShowType showType)
         : name(name), description(description), showType(showType)
     {}
 
@@ -16,7 +16,7 @@ namespace show
         return description;
     }
 
-    ShowType Show::getShowType() const
+    EShowType Show::getShowType() const
     {
         return showType;
     }

@@ -2,21 +2,10 @@
 
 #include <string>
 
+#include "EShowType.hpp"
+
 namespace show
 {
-    /**
-     * @brief The type of show
-     * 
-     */
-    enum class ShowType
-    {
-        MOVIE = 0,
-        STREET_SHOW,
-        THEATER,
-        CONCERT,
-        OTHER
-    };
-
     /**
     * @brief An interface for a show
     * 
@@ -47,8 +36,8 @@ namespace show
             /**
             * @brief Get the Show Type object
             * 
-            * @return ShowType The type of the show
+            * @return EShowType The type of the show
             */
-            virtual ShowType getShowType() const = 0;
+            virtual EShowType getShowType() const = 0;
     };
 }

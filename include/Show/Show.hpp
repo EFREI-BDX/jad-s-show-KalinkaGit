@@ -3,6 +3,7 @@
 #include <string>
 
 #include "IShow.hpp"
+#include "EShowType.hpp"
 
 namespace show
 {
@@ -15,7 +16,7 @@ namespace show
         protected:
             std::string name;
             std::string description;
-            ShowType showType;
+            EShowType showType;
 
         public:
             /**
@@ -25,7 +26,7 @@ namespace show
             * @param description The description of the show
             * @param showType The type of the show
             */
-            Show(const std::string &name, const std::string &description, ShowType showType);
+            Show(const std::string &name, const std::string &description, EShowType showType);
 
             /**
             * @brief Get the Name object
@@ -44,8 +45,8 @@ namespace show
             /**
             * @brief Get the Show Type object
             * 
-            * @return ShowType The type of the show
+            * @return EShowType The type of the show
             */
-            ShowType getShowType() const override;
+            EShowType getShowType() const override;
     };
 }

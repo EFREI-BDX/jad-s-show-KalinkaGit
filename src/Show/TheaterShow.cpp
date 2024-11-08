@@ -7,7 +7,7 @@ namespace show
         const std::string &description,
         const std::vector<std::string> &actors
     )
-        : Show(name, description, ShowType::THEATER), actors(actors)
+        : Show(name, description, EShowType("Théâtre")), actors(actors)
     {}
 
     std::string TheaterShow::getDirector() const

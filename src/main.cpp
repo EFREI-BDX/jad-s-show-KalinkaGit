@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 
 #include "Show/ConcertShow.hpp"
 #include "Show/TheaterShow.hpp"
@@ -15,6 +16,14 @@ int main()
     spectator.watch(concert);
     spectator.watch(theater);
     spectator.watch(movie);
+
+	std::cout << spectator.getFirstName() << " " << spectator.getLastName() << std::endl;
+	std::cout << concert.getName() << std::endl;
+	std::cout << concert.getDescription() << std::endl;
+	std::cout << concert.getShowType().getName() << std::endl;
+	std::cout << concert.getArtist() << std::endl;
+	std::cout << theater.getName() << std::endl;
+	std::cout << theater.getDescription() << std::endl;
 
 	return 0;
 }
